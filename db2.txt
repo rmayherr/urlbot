@@ -1,0 +1,4 @@
+create stogroup db2stg1 on '/db2stg1' device read rate 400 set as default
+create bufferpool BP4K01 immediate pagesize 4K
+create large tablespace ushortts pagesize 4k using stogroup db2stg1 bufferpool BP4K01
+
